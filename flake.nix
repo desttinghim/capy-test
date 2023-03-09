@@ -38,7 +38,7 @@
             cmdline-tools-latest
             emulator
             platform-tools
-            platforms-android-21
+            platforms-android-26
             ndk-25-1-8937393
           ]);
         };
@@ -48,6 +48,7 @@
           buildInputs = with pkgs; [
             pkg-config
             gtk3
+            wineWowPackages.waylandFull
           ];
 
           shellHook =
